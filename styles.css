@@ -1,0 +1,911 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Dancing Script";
+  color: #111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.parallax__container img {
+  margin-top: -50px;
+}
+
+
+.parallax__container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.parallax__container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.parallax__container img {
+  position: absolute;
+
+}
+
+.parallax__container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.about {
+  min-height: 125vh;
+  background-color: #000000;
+  display: grid;
+  place-content: center;
+}
+
+.image__gallary {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.image__card {
+  opacity: 0;
+}
+
+.image__card img {
+  border-radius: 1rem;
+}
+
+.details {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.footer__btn {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.learn__more {
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+
+#exhibits {
+  text-align: center;
+  padding: 20px;
+}
+
+#exhibits h2 {
+  margin-bottom: 32px;
+  margin-top: 15px;
+}
+
+.exhibits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: 20px 20px;
+}
+
+.exhibits-item {
+  position: relative;
+
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 14px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(134, 134, 134, 0.7);
+}
+
+#p1 {
+  width: 212px;
+  height: 270px;
+}
+
+#p2 {
+  width: 250px;
+  height: 185px;
+}
+
+#p3 {
+  width: 212px;
+  height: 250px;
+}
+
+#p4 {
+  width: 212px;
+  height: 260px;
+  margin-top: 30px;
+
+}
+
+#p5 {
+  width: 260px;
+  height: 190px;
+}
+
+#p6 {
+  width: 212px;
+  height: 225px;
+}
+
+#p7 {
+  width: 212px;
+  height: 280px;
+  margin-top: -80px;
+}
+
+#p8 {
+  width: 200px;
+  height: 255px;
+  margin-top: -30px;
+}
+
+#p9 {
+  width: 200px;
+  height: 220px;
+  margin-top: 5px;
+}
+
+#p10 {
+  width: 250px;
+  height: 300px;
+  grid-column: 2;
+  grid-area: centered-item;
+  margin-top: -80px;
+}
+
+.exhibits-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.exhibits-item .loc {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.exhibits-item:hover {
+  transform: scale(1.05);
+}
+
+.exhibits-item:hover img {
+  transform: scale(1.1);
+}
+
+.exhibits-item:hover .loc {
+  opacity: 1;
+}
+
+
+
+
+.parallax_container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+
+}
+
+.parallax_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.parallax_container img {
+  position: absolute;
+  margin-top: -100px;
+}
+
+.parallax_container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.about {
+  min-height: 125vh;
+  background-color: #000000;
+  display: grid;
+  place-content: center;
+}
+
+.image-gallery {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.image-card {
+  opacity: 0;
+}
+
+.image-card img {
+  border-radius: 1rem;
+
+}
+
+.details {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.footer-btn {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.learn-more {
+  font-size: 1rem;
+  font-style: 600;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+.main_box {
+  background-image: url(img.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+
+
+.btn_one i {
+  color: antiquewhite;
+  font-size: 25px;
+  font-weight: 600px;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+}
+
+.sidebar_menu {
+  left: -300px;
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  width: 279px;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  height: 69px;
+
+}
+
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 50px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 800;
+
+}
+
+.sidebar_menu .btn_two i {
+  top: 10px;
+  color: whitesmoke;
+  font-size: 25px;
+  position: absolute;
+  left: 250px;
+  line-height: 62px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+
+}
+
+.sidebar_menu .menu li {
+  margin-top: 12px;
+  padding: 15px 20px;
+  opacity: 0.8;
+  color: whitesmoke;
+
+}
+
+.sidebar_menu .menu i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu a {
+  font-weight: 500;
+
+}
+
+.sidebar_menu .menu i {
+  padding-right: 10px;
+  left: 13px;
+
+}
+
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 25%;
+  bottom: 20px;
+}
+
+.sidebar_menu .social_media i {
+  opacity: 0.6;
+  color: white;
+  padding: 0 5px;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  color: whitesmoke;
+  opacity: 1;
+}
+
+.btn_one i:hover {
+  transform: scale(1.2);
+  transition: all 0.3s linear;
+
+
+}
+
+.btn_two i:hover {
+  transform: scale(1.2);
+  opacity: 1;
+
+}
+
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+#check:checked~.sidebar_menu {
+  left: 0px;
+
+}
+
+#check:checked~.btn_one {
+  opacity: 0;
+}
+
+#check:checked~.sidebar_menu .logo a {
+
+  font-size: 36px;
+  left: 12px;
+  top: 9px;
+}
+
+h1 {
+  position: absolute;
+  font-weight: 600;
+  font-size: 100px;
+  padding: 100px;
+  margin: 20px;
+  padding-left: 260px;
+  padding-top: 200px;
+  color: rgba(255, 255, 255, 0.896);
+  text-shadow: 1px 1px 60px black;
+  text-decoration: dashed beige;
+}
+
+h3 {
+  font-family: "Dancing Script";
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  font-weight: 450;
+  padding: 360px 3px 3px 360px;
+  text-shadow: 0 0 60px black;
+
+}
+
+#author {
+  font-family: "Dancing Script";
+  color: white;
+  font-size: 40px;
+  position: ab;
+  font-weight: 400;
+  padding: 460px 2px 2px 820px;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+
+}
+
+.section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  margin-bottom: 10px;
+  color: #f2f2f2;
+  font-family: 'Dancing Script';
+  font-weight: 600;
+}
+
+.section p {
+  font-size: 24px;
+  color: #b5b5b5;
+  font-weight: 400;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact button {
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#contact button:hover {
+  background-color: #ff3b2f;
+}
+
+.quote-slider {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: -18px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: -40px;
+}
+
+
+.quote-slider p {
+  font-family: monospace;
+  position: absolute;
+  opacity: 0;
+  font-size: 19px;
+  font-style: italic;
+  color: #d9d9d9;
+  text-align: center;
+  width: 100%;
+  animation: fadeInOut 24s infinite;
+  margin-top: -10px;
+}
+
+/* Keyframes for fade-in and fade-out */
+@keyframes fadeInOut {
+
+  0%,
+  20% {
+    opacity: 0;
+  }
+
+  25%,
+  45% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.quote-slider:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Delay for each quote to appear sequentially */
+.quote-slider p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.quote-slider p:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.quote-slider p:nth-child(3) {
+  animation-delay: 12s;
+}
+
+.quote-slider p:nth-child(4) {
+  animation-delay: 18s;
+}
+
+.quote-slider p:nth-child(5) {
+  animation-delay: 24s;
+}
+
+
+
+.gallery-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.gallery {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.parallax__container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.parallax__container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.parallax__container img {
+  position: absolute;
+}
+
+.parallax__container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.about {
+  min-height: 125vh;
+  background-color: #000000;
+  display: grid;
+  place-content: center;
+}
+
+.image__gallary {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.image__card {
+  opacity: 0;
+}
+
+.image__card img {
+  border-radius: 1rem;
+}
+
+.details {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.footer__btn {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.learn__more {
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+/* Center and Expand Title */
+#title {
+  font-size: 3rem;
+  color: #f2f2f2;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Feedback Section Styles */
+.feedback-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.feedback-card {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.feedback-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.feedback-card:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* Contact Form Styling */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #ff3b2f;
+}
+
+/* Background Gradient */
+body {
+  background-image: radial-gradient(circle, #215e5e, #215257, #22454d, #243942, #232e35, #21272d, #1e2024, #1a1a1c, #161517, #111011, #090809, #000000);
+  color: #f2f2f2;
+}
+
+/* Feedback Card Styling */
+.feedback-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.feedback-card {
+  position: absolute;
+  background: rgba(20, 20, 20, 0.9);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.feedback-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.feedback-card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+.feedback-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.feedback-card .reviewer-name {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Gallery Image Styling */
+.gallery img {
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.gallery-container {
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar a:hover {
+  background-color: #575757;
+  color: white;
+}
+
+/* Removing Unwanted Right Vertical Bar */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Gradient Background for Sections */
+#about, #exhibits, #gallery, #quotes, #feedback, #contact {
+  background-image: linear-gradient(to right bottom, #000000, #0e0e0e, #181818, #202020, #282828);
+}
+
+/* Feedback Section Layout Adjustment */
+.feedback-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.feedback-card .reviewer-name {
+  font-weight: bold;
+  margin-top: 8px;
+}

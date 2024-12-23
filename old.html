@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Visuals by Sujal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#exhibits">Exhibits</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#contact">Contact Us</a>
+</nav>
+  <div class="parallax__container">
+    <img id="bg-1" src="assets/bg-1.png" alt="parallax" />
+    <img id="bg-2" src="assets/bg-2.png" alt="parallax" />
+    <h1 id="title">Visuals by Sujal</h1>
+    <img id="bg-3" src="assets/bg-3.png" alt="parallax" />
+  </div>
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+<p style="margin-bottom: 20px;">Check out some of our best shots in the gallery below.</p>
+  </section>
+
+  <section id="exhibits" class="section">
+    <h2>Exhibits</h2>
+    <div class="exhibits-grid">
+      <div class="exhibits-item" id="p1">
+        <img src="p1.jpg" alt="Exhibit 1">
+        <p class="loc">Chopta</p>
+      </div>
+
+      <div class="exhibits-item" id="p2">
+        <img id="up1" src="p2.jpg" alt="Exhibit 2">
+        <p class="loc">Patratu Ghhati</p>
+      </div>
+
+      <div class="exhibits-item" id="p3">
+        <img src="p3.jpeg" alt="Exhibit 3">
+        <p class="loc">Jonha Fall</p>
+      </div>
+
+      <div class="exhibits-item" id="p4">
+        <img src="p4.jpg" alt="Exhibit 4">
+        <p class="loc">Xavier's, Ranchi</p>
+      </div>
+
+      <div class="exhibits-item" id="p5">
+        <img id="up2" src="p5.jpg" alt="Exhibit 5">
+        <p class="loc">Kedarnath</p>
+      </div>
+
+      <div class="exhibits-item" id="p6">
+        <img src="p6.jpg" alt="Exhibit 6">
+        <p class="loc">Xavier's, Ranchi</p>
+      </div>
+
+      <div class="exhibits-item" id="p7">
+        <img src="p7.jpg" alt="Exhibit 7">
+        <p class="loc">Hundru Fall</p>
+      </div>
+
+      <div class="exhibits-item" id="p8">
+        <img id="up3" src="p8.jpg" alt="Exhibit 8">
+        <p class="loc">Ratu Road</p>
+      </div>
+
+      <div class="exhibits-item" id="p9">
+        <img src="p9.jpg" alt="Exhibit 9">
+        <p class="loc">Heaven Hills</p>
+      </div>
+
+      <div class="exhibits-item" id="p10">
+        <img id="up4" src="p10.jpg" alt="Exhibit 10">
+        <p class="loc">Jagarnath Mela</p>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Gallery Section -->
+  <section id="gallery" class="section slide-in-right">
+    <h2>Gallery</h2>
+    <p>Check out some of our best shots in the gallery below.</p>
+
+    <div class="gallery-container">
+      <div class="gallery">
+        <img src="p1.jpg" alt="Image 1">
+        <img src="p2.jpg" alt="Image 2">
+        <img src="p3.jpeg" alt="Image 3">
+        <img src="p4.jpg" alt="Image 4">
+        <!-- Repeat images to create a loop effect -->
+        <img src="p5.jpg" alt="Image 1">
+        <img src="p6.jpg" alt="Image 2">
+        <img src="p7.jpg" alt="Image 3">
+        <img src="p8.jpg" alt="Image 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="quotes" class="section slide-in-left">
+    <h2>Inspiring Quotes</h2>
+    <div class="quote-slider">
+      <p>"Photography takes an instant out of time, altering life by holding it still." - Dorothea Lange</p>
+      <p>"A picture is a secret about a secret, the more it tells you the less you know." - Diane Arbus</p>
+      <p>"The camera is an instrument that teaches people how to see without a camera." - Dorothea Lange</p>
+      <p>"Photography is the story I fail to put into words." - Destin Sparks</p>
+    </div>
+  </section>
+
+<!-- Feedback Section Update -->
+<section id="feedback" class="section slide-in-right">
+  <h2>What People Say...</h2>
+  <div class="feedback-slider">
+    <!-- Feedback cards will loop through here dynamically -->
+  </div>
+</section>
+
+
+<!-- Contact Us Section Update -->
+<section id="contact" class="section slide-in-left">
+  <h2>Contact Us</h2>
+  <p>Feel free to reach out with any inquiries or bookings.</p>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
