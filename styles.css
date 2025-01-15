@@ -519,6 +519,7 @@ h3 {
   gap: 10px;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 #contact input,
@@ -754,14 +755,7 @@ h3 {
   transform: scale(1.05);
 }
 
-/* Contact Form Styling */
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 20px auto;
-}
+
 
 #contactForm input,
 #contactForm textarea {
@@ -850,6 +844,7 @@ body {
   overflow: hidden;
   width: 100vw;
   display: flex;
+  margin-top: 42px;
 }
 
 .gallery {
@@ -871,21 +866,27 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.801);
   text-align: center;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   z-index: 1000;
+  align-content: center;
+  height: 44px;
 }
 .navbar a {
   color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-}
+  margin: 17px;
+    text-decoration: none;
+  font-size: 25px;
+  font-family: 'Dancing Script', sans-serif;
+  transition: font-size 0.2s ease-in-out;
+  border-radius: 35px;
+ }
 .navbar a:hover {
-  background-color: #575757;
-  color: white;
+   font-size: 30px;
+    opacity: 1;
+
+
 }
 
 /* Removing Unwanted Right Vertical Bar */
@@ -895,7 +896,7 @@ body, html {
 
 /* Gradient Background for Sections */
 #about, #exhibits, #gallery, #quotes, #feedback, #contact {
-  background-image: linear-gradient(to right bottom, #000000, #0e0e0e, #181818, #202020, #282828);
+  background-image: black;
 }
 
 /* Feedback Section Layout Adjustment */
@@ -908,4 +909,10 @@ body, html {
 .feedback-card .reviewer-name {
   font-weight: bold;
   margin-top: 8px;
+}
+
+.abouttext{
+    width: 152%;
+   
+    margin-left: 184px;
 }
